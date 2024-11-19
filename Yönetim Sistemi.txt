@@ -1,0 +1,76 @@
+﻿Proje Fikri: Diş Kliniği Yönetim Sistemi
+Diş hekiminin hasta yönetimini, randevuları, stokları ve finansal işlemleri kolayca takip edebileceği bir uygulama. Bu sistem, hem web hem de mobil erişime uygun olarak tasarlanabilir.
+
+Başlıca Özellikler
+Hasta Yönetimi
+
+Hasta kayıtları (ad, soyad, iletişim bilgileri, tıbbi geçmiş, alerjiler).
+Tedavi geçmişi takibi (geçmiş prosedürler, notlar, röntgenler vb.).
+Randevu Yönetimi
+
+Randevu oluşturma, düzenleme, iptal etme.
+Takvim entegrasyonu (örneğin, Google Calendar).
+Otomatik randevu hatırlatma (SMS/E-posta entegrasyonu).
+Stok Yönetimi
+
+Malzemelerin stok takibi (örneğin, dolgu malzemeleri, sterilizasyon ürünleri).
+Otomatik stok yenileme hatırlatmaları.
+Fatura ve Ödeme Takibi
+
+Tedavi ücretleri ve ödeme durumlarının takibi.
+Fatura oluşturma ve çıktı alma.
+Raporlama ve Analiz
+
+Günlük/haftalık/montalık randevu analizleri.
+Gelir-gider raporları.
+Hasta ziyaret istatistikleri.
+Çoklu Kullanıcı Desteği
+
+Doktor, hemşire/asistan ve sekreter gibi farklı roller için kullanıcı girişleri ve yetkilendirme.
+
+-*-*-**-*-
+
+
+Örnek Veri Akışı
+Hasta yeni bir randevu oluşturur.
+Randevu isteği, iş kuralları kontrolünden geçer (çakışma var mı, doktor uygun mu?).
+Randevu bilgisi veritabanına kaydedilir.
+Randevu oluşturulduktan sonra hastaya otomatik SMS ile hatırlatma gönderilir.
+
+-*-*-*-*--*-*-
+
+
+Teknoloji Yığını
+Backend: .NET Core 8, Entity Framework Core.
+Frontend:
+Web için Blazor veya Razor Pages.
+Mobil için .NET MAUI.
+Veritabanı: SQL Server veya PostgreSQL.
+Bulut Hizmetleri: Microsoft Azure (örneğin, App Service ve Azure SQL).
+CI/CD: Azure DevOps veya GitHub Actions.
+
+
+*--*-*-*-*-*--*-
+
+
+Projenin Monetizasyonu
+Lisanslama: Diş hekimlerine belirli bir ücretle yazılım lisansı satın.
+Abonelik: Bulut tabanlı bir sistem sunarak aylık veya yıllık ödeme modeli uygulayın.
+Ekstra Özellikler: SMS hatırlatmaları gibi özellikler için ek ücret talep edin.
+
+
+-*-*-*-*--
+
+Proje Yapısı
+plaintext
+Kodu kopyala
+DişKliniği/
+├── DişKliniği-Frontend             (MVC tabanlı Frontend projesi)
+├── DişKliniği-Backend              (Backend ana çözüm dosyası)
+    ├── DişKliniği.API              (API Katmanı)
+    ├── DişKliniği.Business         (Business Logic Katmanı)
+    ├── DişKliniği.DAL              (Data Access Layer - Veri Erişim)
+    ├── DişKliniği.Entity           (Entity Katmanı - Temel modeller)
+    ├── DişKliniği.DTO              (Data Transfer Objects)
+
+
